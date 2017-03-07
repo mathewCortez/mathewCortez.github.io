@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-body {
+.front {
+    float:left;
+    height: 100vh;
+    width: 100%;
     background-image: url(../img/background-min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -12,32 +15,9 @@ body {
 
 }
 
-/*
-.front {
-    height: 100vh;
-    width: 100vw;
-}
-*/
-
-
-
-/*
-#backg {
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    z-index: -1;
-    
-}
-*/
 
 .name {
-
-    margin-top: 50vh;
+    margin-top: 45vh;
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
@@ -48,6 +28,65 @@ body {
 
 h2 {
     color: white;
+    padding: 5px;
     
 }
+
+.about {
+    clear: both;
+    padding-top: 50px;
+
+}
+
+.profile {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    max-width: 15%;
+    min-width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+h3 {
+
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+p {
+    width: 50%;
+    padding-top: 30px;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    color: slategrey;
+}
+
+@media only screen and (max-width: 950px) {
+    .profile {
+        max-width: 20%;
+    }
+
+}
+
+
+@media only screen and (max-width: 365px) {
+    .name {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+    h3 {
+        font-size: 2.3em;
+    }
+
+}
+
 
