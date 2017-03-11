@@ -88,6 +88,7 @@ a {
 .tool {
     width: 60%;
     margin: 0 auto;
+    text-align: justify;
 
 }
 
@@ -95,7 +96,19 @@ a {
     width: auto;
     height: 90px;
     max-width: 100%;
+/*    display: inline-block;*/
 }
+
+.sql {
+    margin: 0 auto;
+    text-align:center;
+}
+.tool:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
 
 footer {
     height: 50px;
