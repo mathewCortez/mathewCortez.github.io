@@ -111,7 +111,30 @@ a {
     width: 100%;
 }
 
+.experience {
+    width:60%;
+    padding-top: 30px;
+    display:flex;
+    margin: 0 auto;
+    
+    
+}
+.education {
+    width: 50%;
+    float: left;
+    
+    
+}
+.edu-descript {
+    width: 50%;
+    float: right;
+    
+}
 
+.e-last {
+    padding-bottom: 40px;
+    
+}
 
 footer {
     height: 50px;
@@ -122,7 +145,9 @@ footer {
     padding-top: 20px;
     font-size: 1.3em;
     box-shadow: 0px -2px 5px #888888;
+    clear: both
 }
+
 
 @media only screen and (max-width: 950px) {
     .profile {
