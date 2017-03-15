@@ -72,7 +72,9 @@ h4 {
     padding-bottom: 25px;
 }
 
-
+.edu {
+    padding-bottom: 0;
+}
 .me {
     width: 60%;
     padding-top: 30px;
@@ -136,6 +138,14 @@ a {
     
 }
 
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1.1em;
+}
+
 footer {
     height: 50px;
     background-color: #7288B9;
@@ -156,7 +166,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .tool {
         text-align: none;
     }
@@ -171,8 +181,25 @@ footer {
         padding-top: 25px;
         display: block;
         margin: 0 auto;
+        
+    }
+    .experience {
+        display:block;
+    }
+    
+    .education {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+
     }
 
+    .edu-descript {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }    
 }
 
 @media only screen and (max-width: 365px) {
@@ -183,11 +210,7 @@ footer {
     h3 {
         font-size: 2.3em;
     }
-
-}
-
-@media only screen and (max-width: 330px) {
-    h4 {
+        h4 {
         padding-bottom: 0px;
     }
     .first {
@@ -205,5 +228,7 @@ footer {
     }
 
 }
+
+
 
 
