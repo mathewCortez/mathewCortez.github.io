@@ -6,8 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link type="text/css" rel="stylesheet" href="css/main.css"/>
         <link type="text/css" rel="stylesheet" href="css/hover-min.css"/>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     </head>
     <body>
+        <script>
+            AOS.init();
+        </script>
         <section class="front">
             <section class="name">
                 
@@ -17,56 +22,78 @@
             </section>
         </section>
         <section class="projects">
-        
-        
+            <h3>Projects</h3>
+            <hr style="margin-left:auto;margin-right:auto;width:60%;">
+            <section class="project" data-aos="fade-up">
+                
+                <a href="http://blog-158622.appspot.com/blog" target="_blank"><img class="work" src="img/blog.PNG"></a>
+                <p class="proj">In this project, I built a multi-user blog where users can sign in and post blog posts as well as 'Like' and 'Comment' on other posts made on the blog. I have hosted this blog on Google App Engine and have created an authentication system for users to be able to register and sign in and then create blog posts. This project was created using python with jnija2. Most of the style is down with Bootstrap.</p>
+            
+            </section>
+            <section class="project" data-aos="fade-up">
+                
+                <a href="http://mathewcortez.github.io/map/index.html" target="_blank"><img class="work" src="img/concert.PNG"></a> 
+                <p class="proj">A single-page web application, built using the Knockout framework, that displays a Google Map of an area and various points of interest. The map displays concerts that are happening today in Boston. The search bar can be used to narrow down the concerts by name. The concert information come from Jambase through an AJAX call. If the user clicks on the map marker then the concert information will be displayed. It will show the concert artist, venue, address, and a URL to purchase a ticket if Jambase has a URL for that concert.</p>
+            
+            </section>
+            <section class="project" data-aos="fade-up">
+                <a href="https://github.com/mathewCortez/FSWD-Item-catalog" target="_blank"><img class="work" src="img/hobby.PNG"></a> 
+                <p class="proj">This is a python module that creates a website and JSON API for a list of hobbies. Each hobby displays the items required to participate in this hobby along with the items purpose and cost. Authentication is provided via OAuth, users can sign-in with their Google account to add to the catalog. Registered users will have ability to edit and delete their own items. This application uses Flask,SQL Alchemy, JQuery,CSS, Javascript, and OAuth2 to create the Item catalog website. Additionally, all data is stored within a PostgreSQL database.</p>
+            
+            </section>
+            <section class="project" data-aos="fade-up">
+                <a href="https://github.com/mathewCortez/movies" target="_blank"><img class="work" src="img/movies.PNG"></a>
+                <p class="proj">Server-side code written in Python to store a list of my favorite movies, including box art imagery and a movie trailer URL. This data is then served to a web page using HTML and CSS allowing visitors to review these movies and watch the trailers.</p>
+            
+            </section>
         </section>
         <section class="about">
             <h3>About Me</h3>
             <hr style="margin-left:auto;margin-right:auto;width:60%;">
-            <img src="img/profile-cir.jpg" class="profile" alt="Profile picture">
+            <img src="img/profile-cir.jpg" class="profile" alt="Profile picture" data-aos="fade-up">
             
             <hr style="clear:both;margin-left:auto;margin-right:auto;width:30%;">
             
-            <p class="detail"><b>Name:</b> Mathew Cortez<br> <b>E-mail:</b> mcortez121@gmail.com<br> <b>Github:</b> <a href="https://github.com/mathewCortez" class="hvr-bounce-out" target="_blank">mathewCortez</a></p>
+            <p class="detail" data-aos="fade-up"><b>Name:</b> Mathew Cortez<br> <b>E-mail:</b> mcortez121@gmail.com<br> <b>Github:</b> <a href="https://github.com/mathewCortez" class="hvr-bounce-out" target="_blank">mathewCortez</a></p>
 
             
-            <p class="me">My name is Mathew Cortez, a full stack web developer, with experience in developing responsive websites that fluidly change to function the same on desktops and mobile phones.  </p>
+            <p class="me" data-aos="fade-up">My name is Mathew Cortez, a full stack web developer, with experience in developing responsive websites that fluidly change to function the same on desktops and mobile phones.  </p>
             
             <h4>Skills</h4>
             
-            <section class="tool">
+            <section class="tool" data-aos="fade-up">
                 
                 <img class="logo first" src="img/html.svg" alt="html logo">
                 <img class="logo second" src="img/css.svg" alt="css logo">
                 <img class="logo last" src="img/javascript.png" alt="javascript logo">
             </section>
-            <section class="tool">
+            <section class="tool" data-aos="fade-up">
                 <img class="logo first" src="img/java.svg" alt="java logo">
                 <img class="logo second" src="img/python.svg" alt="python logo">
                 <img class="logo last" src="img/bootstrap.svg" alt="bootstrap logo">
             </section>
-            <section class="tool">
+            <section class="tool" data-aos="fade-up">
                 <img class="logo first" src="img/jquery.svg" alt="jquery logo">
                 <img class="logo second" src="img/flask.svg" alt="flask logo">
                 <img class="logo last" src="img/git.png" alt="git logo">
                 
             </section>
-            <img class="logo sql" src="img/mysql.svg" alt="mysql logo">
+            <img class="logo sql" src="img/mysql.svg" alt="mysql logo"data-aos="fade-up">
                 
             <h4>Tools</h4>
                 
-            <section class="tool">
+            <section class="tool" data-aos="fade-up">
                 <img class="logo first" src="img/eclipse.svg" alt="eclipse logo">
                 <img class="logo second" src="img/sublime.svg" alt="sublime logo">
                 <img class="logo last" src="img/github.svg" alt="github logo">
             </section>
-            <section class="tool bottom">
+            <section class="tool bottom" data-aos="fade-up">
                 <img class="logo first" src="img/photoshop.svg" alt="phototshop logo">
                 <img class="logo second" src="img/illustrator.svg" alt="illustrator logo">
                 <img class="logo last" src="img/wordpress.svg" alt="wordpress logo">
             </section>
-            <h4 class="edu">Education</h4>
-            <section class="experience">
+            <h4 class="edu">Experience</h4>
+            <section class="experience" data-aos="fade-up">
                 <section class="education">
                     <h5>Udacity</h5>
                     <time>October 2016 - February 2017</time>
@@ -76,7 +103,7 @@
                     <p class="description">This program covered some of the topics in the front-end nanodegree program but most f the focus was on backend web development.  I was introduced to SQL, integrating python into websites, and how manage databases.  I learned how to register people to a website and safely store their information.</p>
                 </section>
             </section>
-            <section class="experience">
+            <section class="experience" data-aos="fade-up">
                 <section class="education">
                     <h5>Udacity</h5>
                     <time>March 2016 - August 2016</time>
@@ -87,7 +114,7 @@
                 </section>
             
             </section>
-            <section class="experience">
+            <section class="experience" data-aos="fade-up">
                 <section class="education">
                     <h5>Rutgers University -- New Brunswick</h5>
                     <time>August 2014 - Present</time>
@@ -99,7 +126,7 @@
             
             </section>
             
-            <section class="experience">
+            <section class="experience" data-aos="fade-up">
                 <section class="education">
                     <h5>DSV Air &amp; Sea</h5>
                     <time>May 2016 - August 2016</time>
@@ -116,7 +143,7 @@
             
             </section>
             
-            <section class="experience e-last">
+            <section class="experience e-last" data-aos="fade-up">
                 <section class="education">
                     <h5>Groupe SEB</h5>
                     <time>May 2015 - August 2015</time>
@@ -133,5 +160,6 @@
             
         </section>  
         <footer>&copy; 2017 - Mathew Cortez</footer>
+        
     </body>
 </html>

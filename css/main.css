@@ -32,13 +32,41 @@ h2 {
     
 }
 
+.projects {
+    padding-top: 50px;
+    clear: both;
+    background-color: #BDC687;
+    padding-bottom: 50px;
+}
+
+.project {
+    padding-top: 30px;
+}
+
+.work {
+    width: 70%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+    box-shadow:0 1px 10px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+}
+
+.proj {
+    padding-top: 20px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
 .about {
     clear: both;
     padding-top: 50px;
     background-color: #FAEFD1;
-
+    border-top: 7px solid #D7C69A;
+    box-shadow: 0px -2px 5px #888888;
 }
-
 
 
 .profile {
@@ -156,6 +184,15 @@ footer {
     font-size: 1.3em;
     box-shadow: 0px -2px 5px #888888;
     clear: both
+}
+
+@media only screen and (min-width: 1030px) {
+    .work {
+        width: 709.51px;
+    }
+    .proj {
+        width: 608.15;
+    }
 }
 
 
