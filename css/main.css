@@ -44,14 +44,49 @@ h2 {
     padding-top: 30px;
 }
 
-.work {
-    width: 70%;
+.works {
     position: relative;
+    width: 70%;
+    margin:0 auto;
+}
+
+
+
+.work {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 100%;
     display: block;
-    margin: 0 auto;
     border-radius: 3%;
     box-shadow:0 1px 10px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
+/*    position: relative;*/
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.works:hover .work {
+    opacity: 0.3;
+}
+
+.works:hover .overlay {
+    opacity: 1;
+}
+
+.otext {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
 
 .proj {
     padding-top: 20px;
@@ -61,12 +96,14 @@ h2 {
     
 }
 
+
 .about {
     clear: both;
     padding-top: 50px;
     background-color: #FAEFD1;
     border-top: 7px solid #D7C69A;
     box-shadow: 0px -2px 5px #888888;
+    padding-bottom: 15px;
 }
 
 
@@ -76,8 +113,7 @@ h2 {
     padding-bottom: 20px;
     max-width: 15%;
     min-width: 125px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-radius: 55%;
     
 }
@@ -143,28 +179,25 @@ a {
 }
 
 .experience {
-    width:60%;
-    padding-top: 30px;
-    display:flex;
-    margin: 0 auto;
-    
-    
-}
-.education {
-    width: 50%;
-    float: left;
-    
-    
-}
-.edu-descript {
-    width: 50%;
-    float: right;
+    width: 60%;
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    margin: 15px auto;
     
 }
 
+.education {
+    width: 50%;
+    float: left;  
+}
+
+.edu-descript {
+    width: 50%;
+    float: right;  
+}
+
 .e-last {
-    padding-bottom: 40px;
-    
+    margin-bottom: 0; 
 }
 
 h5 {
@@ -188,11 +221,14 @@ footer {
 }
 
 @media only screen and (min-width: 1030px) {
+    .works {
+        width: 709.15px;
+    }
     .work {
         width: 709.51px;
     }
     .proj {
-        width: 608.15;
+        width: 608.15px;
     }
 }
 
@@ -203,6 +239,29 @@ footer {
     }
 
 }
+
+@media only screen and (max-width: 750px) {
+    .experience {
+        display:block;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+    }
+    
+    .education {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        
+    }
+
+    .edu-descript {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }   
+
+}
+
 
 @media only screen and (max-width: 550px) {
     .tool {
@@ -218,26 +277,9 @@ footer {
     .last {
         padding-top: 25px;
         display: block;
-        margin: 0 auto;
-        
+        margin: 0 auto;  
     }
-    .experience {
-        display:block;
-    }
-    
-    .education {
-        float: none;
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
-
-    }
-
-    .edu-descript {
-        float: none;
-        width: 100%;
-        text-align: center;
-    }    
+     
 }
 
 @media only screen and (max-width: 365px) {
