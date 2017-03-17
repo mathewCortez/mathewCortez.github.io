@@ -8,7 +8,7 @@
     float:left;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/background-min.jpg);
+    background-image: url(../img/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -170,6 +170,14 @@ a {
 /*    display: inline-block;*/
 }
 
+.js {
+    height: 
+}
+
+.java {
+    padding: 0 20px;
+}
+
 .sql {
     display: block;
     margin: 0 auto;
@@ -262,6 +270,8 @@ footer {
         width: 100%;
         text-align: center;
     }   
+    
+    
 
 }
 
@@ -281,6 +291,9 @@ footer {
         padding-top: 25px;
         display: block;
         margin: 0 auto;  
+    }
+    .front {
+        background-image: url(../img/smaller-back.jpg);
     }
      
 }
