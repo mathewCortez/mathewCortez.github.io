@@ -106,6 +106,9 @@ h2 {
     padding-bottom: 15px;
 }
 
+.github:hover {
+    font-weight: 700;
+}
 
 .profile {
     display: block;
