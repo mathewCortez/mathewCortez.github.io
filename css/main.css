@@ -7,6 +7,7 @@
 .front {
     float:left;
     height: 100vh;
+    position: relative;
     width: 100%;
     background-image: url(../img/background.jpg);
     background-position: center center;
@@ -32,6 +33,45 @@ h2 {
     padding: 5px;
     
 }
+
+.scrollNotice {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.arrowPic {
+    margin: 0 30%;
+    
+}
+
+.arrow {
+    display:block;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    float: bottom;
+    opacity: 0.8;
+    
+}
+
+.hoverScroll {
+    visibility: hidden;
+    display: block;
+    margin: 5px auto;
+    width: 120px;
+    background-color: black;
+    color: floralwhite;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    
+}
+
+.arrowPic:hover .hoverScroll {
+    visibility: visible;
+}
+
 
 .projects {
     padding-top: 50px;
@@ -81,10 +121,10 @@ h2 {
 }
 
 .otext {
-    background-color: #4CAF50;
+    background-color: #000;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 1.5em;
+    padding: 16px 40px;
 }
 
 
@@ -219,6 +259,18 @@ h6 {
     font-size: 1.1em;
 }
 
+.topButton {
+    
+    display: block;
+    width: 20%;
+    margin: 15px auto 0px;
+    padding: 10px;
+    color: floralwhite;
+    background-color: #A1A1A1;
+    border-radius: 25px;
+    text-align: center;
+}
+
 footer {
     height: 50px;
     background-color: #7288B9;
@@ -295,10 +347,10 @@ footer {
      
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 380px) {
     .name {
-        margin-left: 16%;
-        margin-right: 16%;
+        margin-left: 17%;
+        margin-right: 17%;
     }
     h3 {
         font-size: 2.3em;
