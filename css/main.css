@@ -17,7 +17,12 @@
 
 }
 
-nav {
+.menu {
+    display: none;
+}
+
+#navigation {
+    display: block;
     position: fixed;
     right: 0;
     padding: 20px 20px 0 0;
@@ -77,11 +82,6 @@ h2 {
 
 }
 
-.arrowPic {
-    margin: 0 30%;
-    
-}
-
 .arrow {
     display:block;
     margin: 0 auto;
@@ -122,6 +122,10 @@ h2 {
 
 .project {
     padding-top: 30px;
+}
+
+.link {
+    display: none;
 }
 
 .works {
@@ -365,6 +369,15 @@ footer {
 
 }
 
+@media only screen and (min-width: 551px) {
+    #navigation {
+        display: block !important;
+    }
+    .homeSpan, .workSpan, .meSpan {
+        visibility: hidden;
+    }
+}
+
 
 @media only screen and (max-width: 550px) {
     .tool {
@@ -382,6 +395,45 @@ footer {
         display: block;
         margin: 0 auto;  
     }
+    .hoverScroll {
+        visibility: visible;
+    }
+    .overlay {
+        visibility: hidden;
+    }
+    .works:hover .work {
+        opacity: 1;
+        
+    }
+    .link {
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: aliceblue;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .menu {
+        display: block;
+        width: 40px;
+        height: auto;
+        right:0;
+        padding: 20px 20px 0 0;
+        position: fixed;
+        
+    }
+    
+    #navigation {
+        top: 40px;
+        display: none;
+    }
+    
+    .homeSpan, .workSpan, .meSpan {
+        visibility: visible;
+    }
+    
      
 }
 
