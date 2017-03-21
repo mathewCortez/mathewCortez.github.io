@@ -17,6 +17,41 @@
 
 }
 
+nav {
+    position: fixed;
+    right: 0;
+    padding: 20px 20px 0 0;
+    z-index: 3;
+}
+
+.navSection {
+    display:block;
+}
+
+.navItem {
+    height: 35px;
+    width: auto;
+    border-radius: 40px;
+    padding-bottom: 5px;
+}
+
+.homeSpan, .workSpan, .meSpan {
+    position: relative;
+    bottom: 12px;
+    right: 5px;
+    color: floralwhite;
+    visibility: hidden;
+    background-color: #A1A1A1;
+    border-radius: 10px;
+    padding:5px;
+    z-index: 3;
+}
+
+
+
+.navSection:hover .homeSpan, .navSection:hover .workSpan, .navSection:hover .meSpan {
+    visibility: visible;
+}
 
 .name {
     margin-top: 45vh;
@@ -36,7 +71,8 @@ h2 {
 
 .scrollNotice {
     position: absolute;
-    width: 100%;
+    width: 50%;
+    margin: 0 25%;
     bottom: 0;
 
 }
@@ -68,6 +104,10 @@ h2 {
     
 }
 
+.arrowPic:hover .arrow {
+    opacity: 1;
+}
+
 .arrowPic:hover .hoverScroll {
     visibility: visible;
 }
@@ -89,8 +129,6 @@ h2 {
     width: 70%;
     margin:0 auto;
 }
-
-
 
 .work {
     opacity: 1;
