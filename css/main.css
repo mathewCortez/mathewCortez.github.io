@@ -120,8 +120,23 @@ h2 {
     padding-bottom: 50px;
 }
 
+
+
 .project {
     padding-top: 30px;
+}
+
+.d3 {
+    padding-top: 30px;
+}
+
+.ad3 {
+    text-decoration: underline;
+    color: black
+}
+
+.ad3:hover {
+    color: #565656;
 }
 
 .link {
