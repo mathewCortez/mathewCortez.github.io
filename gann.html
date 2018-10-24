@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,900" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+      <title>Gann Law</title>
+   </head>
+   <body>
+      <div class='container'>
+          <div class="navBack">
+         <div class="topnav" id="topnav">
+            <a class="li active" href="#home">Home</a>
+            <a class="li" href="#Store">Store</a>
+            <a class="li" href="#Online">Online</a>
+            <a class="li" href="#CLE">CLE</a>
+            <a class="li" href="#Court Rules">Court Rules</a>
+            <div class="login-container">
+               <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="username">
+                  <button type="submit">Login</button>
+               </form>
+            </div>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+         </div>
+              </div>
+         <div class="titleArea">
+            <img src="img/gannlogo.gif" style="height:100px;" alt="gann logo"/>
+            <h1>Gann Law</h1>
+            <h2>More than just Books</h2>
+            <h3>Serving the New Jersey Legal Community Since 1936</h3>
+         </div>
+         <div class="linkSection">
+            <a class="boxLink" href='#Store'>
+               <div class="links">
+                  <h4>Store</h4>
+                  <hr>
+                  <p class="linkEx">Shop books, e-books, primary law, CLE, Special Offers</p>
+               </div>
+            </a>
+            <a class="boxLink" href='#Online'>
+               <div class="links">
+                  <h4>Gann Online</h4>
+                  <hr>
+                  <p class="linkEx">Search our award-winning New Jersey legal research system</p>
+               </div>
+            </a>
+            <a class="boxLink" href='#Discussion'>
+               <div class="links">
+                  <h4>Discussions</h4>
+                  <hr>
+                  <p class="linkEx">Read, write, respond to commentary on N.J. law [<a href="#learn">learn more</a>]</p>
+            </div></a>
+         </div>
+         <div class='records'>
+            <h7>Records: 1 through 25, out of 39.</h7>
+            <div class='record'>
+               <h5>10/19/18 • <a href="#record">Marilyn Flanzman v. Jenny Craig, Inc., Docket No. A-2580-17T1 (App. Div. 2018)</a></h5>
+               <h6>N.J. Arrest, Search &amp; Seizure ••• 0 Comments •••</h6>
+               <p class='recordP'>Rule 4:5-4. Affirmative Defenses; 3. Arbitration and Award Under New Jersey Law. Was an arbitration agreement valid when it failed to identify any particular arbitration forum or otherwise explain the process that would replace a jury trial? (Paragraphs 61-67 in the Opinion)</p>
+            </div>
+            <div class='record'>
+               <h5>10/19/18 • <a href="#record">Marilyn Flanzman v. Jenny Craig, Inc., Docket No. A-2580-17T1 (App. Div. 2018)</a></h5>
+               <h6>N.J. Arrest, Search &amp; Seizure ••• 0 Comments •••</h6>
+               <p class='recordP'>Rule 4:5-4. Affirmative Defenses; 3. Arbitration and Award Under New Jersey Law. Was an arbitration agreement valid when it failed to identify any particular arbitration forum or otherwise explain the process that would replace a jury trial? (Paragraphs 61-67 in the Opinion)</p>
+            </div>
+            <div class='record'>
+               <h5>10/19/18 • <a href="#record">Marilyn Flanzman v. Jenny Craig, Inc., Docket No. A-2580-17T1 (App. Div. 2018)</a></h5>
+               <h6>N.J. Arrest, Search &amp; Seizure ••• 0 Comments •••</h6>
+               <p class='recordP'>Rule 4:5-4. Affirmative Defenses; 3. Arbitration and Award Under New Jersey Law. Was an arbitration agreement valid when it failed to identify any particular arbitration forum or otherwise explain the process that would replace a jury trial? (Paragraphs 61-67 in the Opinion)</p>
+            </div>
+         </div>
+         <footer>
+            <ul>
+               <li><a href="#help">Help</a></li>
+               <li><a href="#compyright">Copyright</a></li>
+               <li><a href="#terms">Terms of Use</a></li>
+               <li><a href="#returns">Returns and Privacy Policies</a></li>
+               <li><a href="#contact">Contact Us</a></li>
+               <li><a href="#about">About</a></li>
+            </ul>
+         </footer>
+      </div>
+      <script>
+         var header = document.getElementById('topnav');
+          var links = header.getElementsByClassName('li');
+          for (var i = 0; i < links.length; i++) {
+              links[i].addEventListener('click', function(){
+                  var current = document.getElementsByClassName('active');
+                  current[0].className = current[0].className.replace(' active', "");
+                  this.className += ' active';
+              });
+          }
+          function myFunction() {
+              var x = document.getElementById("topnav");
+              if (x.className === 'topnav') {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+      </script>
+   </body>
+</html>
